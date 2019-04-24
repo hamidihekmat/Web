@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+}
+
+.nav {
+  background-color: #595959;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.nav > li {
+  display: inline-block;
+  padding: 0px 25px 0px 25px;
+}
+
+ul {
+ padding: 0px;
+ margin: 0px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav > li > a:hover{
+  color: grey;
+}
