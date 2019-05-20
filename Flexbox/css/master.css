@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin: 30px;
+    padding: 40px;
+    background-color: aquamarine;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.items {
+    margin: auto;
+    background-color: peru;
+    width: 300px;
+    height: 150px;
+}
