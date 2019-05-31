@@ -1,4 +1,4 @@
-# Elon Musk Tribute Response Web Page
+# Elon Musk Tribute Responsive Web Page
 Using HTML & CSS (CSS Grid)
 
 # https://codepen.io/hamidihekmat/full/WBYRZJ
