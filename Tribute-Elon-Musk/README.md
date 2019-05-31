@@ -3,4 +3,4 @@ Using HTML & CSS (CSS Grid)
 
 # https://codepen.io/hamidihekmat/full/WBYRZJ
 
-![Screenshot](screenshot.png)
+![alt text](screenshot.png)
