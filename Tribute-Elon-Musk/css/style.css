@@ -1,139 +1,138 @@
 * {
-    margin: 0px 30px;
-    padding: 20px;
-    font-family: Monospace, Helvetica, serif, sans-serif;
-    background: 	#F0F0F0;
-    box-sizing: border-box;
-  }
+  margin: 0px 30px;
+  padding: 20px;
+  font-family: Monospace, Helvetica, serif, sans-serif;
+  background: 	#F0F0F0;
+  box-sizing: border-box;
+}
+
+h1 {
+  grid-area: title;
+  color: #fff;
+  font-style: bold;
+  text-align: center;
+  background: #000;
+  border-radius: 10px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'title'
+                       'img-div'
+                       'info'
+                       'footer';
+  justiy-items: center;
+
+
   
-  h1 {
-    grid-area: title;
-    color: #fff;
-    font-style: bold;
-    text-align: center;
-    background: #000;
-    border-radius: 10px;
-  }
-  
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'title'
-                         'img-div'
-                         'info'
-                         'footer';
-    justiy-items: center;
-  
-  
-    
-  }
-  
-  .img-div {
-    grid-area: img-div;
+}
+
+#img-div {
+  grid-area: img-div;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'img'
+                      'img-cap';
+  justify-items: center;
+  grid-gap: 15px;
+}
+
+#img-div img {
+  grid-area: img;
+  max-width: 50%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#img-caption {
+  grid-area: img-cap;
+
+}
+
+#tribute-info {
+  grid-area: info;
+  margin: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'who'
+                       'education'
+                       'tesla'
+                       'paypal';
+  justify-items: center;
+}
+
+.who {
+  grid-area: who;
+}
+
+.education {
+  grid-area: education;
+}
+
+.paypal {
+  grid-area: paypal;
+}
+
+.tesla {
+  grid-area: tesla;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+}
+
+p {
+  line-height: 30px;
+}
+
+#tribute {
+  grid-area: footer;
+}
+
+h3 {
+  text-align: center;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  * {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'img'
-                        'img-cap';
-    justify-items: center;
-    grid-gap: 15px;
-  }
-  
-  .img-div img {
-    grid-area: img;
-    max-width: 50%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    background: #909090;
+    font-size: 20px;
+    
   
   }
-  
-  .img-caption {
-    grid-area: img-cap;
-  
-  }
-  
-  .tribute-info {
-    grid-area: info;
-    margin: 0px 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'who'
-                         'education'
-                         'tesla'
-                         'paypal';
-    justify-items: center;
-  }
-  
-  .who {
-    grid-area: who;
-  }
-  
-  .education {
-    grid-area: education;
-  }
-  
-  .paypal {
-    grid-area: paypal;
-  }
-  
-  .tesla {
-    grid-area: tesla;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #fff;
-    background: #000;
-    border-radius: 10px;
-  }
-  
-  p {
-    line-height: 30px;
-  }
-  
-  .tribute-link {
-    grid-area: footer;
-  }
-  
-  h3 {
-    text-align: center;
-  }
-  
-  .link {
+
+}
+
+@media only screen and (max-width: 950px) {
+  * {
     margin: 0;
-    padding: 0;
-  }
-  @media only screen and (max-width: 600px) {
-    * {
-      margin: 0;
-      padding: 10px;
-      background: #909090;
-      font-size: 20px;
-      
+    padding: 10px;
     
-    }
   
   }
-  
-  @media only screen and (max-width: 950px) {
-    * {
-      margin: 0;
-      padding: 10px;
-      
+
+}
+
+@media only screen and (max-width: 300px) {
+  * {
+    margin: 0;
+    padding: 5px;
+    background: #909090;
+    font-size: 20px;
     
-    }
   
   }
-  
-  }
-  @media only screen and (max-width: 300px) {
-    * {
-      margin: 0;
-      padding: 5px;
-      background: #909090;
-      font-size: 20px;
-      
-    
-    }
-  
-  }
+
+}
