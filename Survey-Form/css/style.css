@@ -12,15 +12,21 @@ body {
 #container {
     display: grid;
     grid-template-areas: 'title'
-                         'descriptiom'
+                         'description'
                          'form'
                          'submit';
     justify-items: center;
 }
 
+
+h1 {
+  text-transform: uppercase;
+}
+
+
 #title {
     padding: 30px;
-    font-size: 25px;
+    font-size: 40px;
     grid-area: title;
     background-color: #F67280;
     width: 100%;
@@ -29,6 +35,12 @@ body {
 }
 #description {
     grid-area: description;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #F67280;
+    text-align: center;
+    width: 100%;
+  
 }
 #survey-form {
     background-color: #C06c84;
@@ -83,3 +95,4 @@ h2 {
     font-size: 16px;
     text-transform: uppercase;
 }
+
